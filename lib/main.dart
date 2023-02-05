@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'providers/repos_provider.dart';
 import 'providers/user_provider.dart';
 import 'screens/homepage.dart';
+import 'screens/splashScreen.dart';
 import 'screens/user_details_screen.dart';
 
 void main() {
@@ -26,12 +27,14 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Github Searcher',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.grey,
         ),
-        home: HomePage(),
+        home: SplashScreen(),
         routes: {
+          SplashScreen.routeName: (context) => SplashScreen(),
           HomePage.routeName: (context) => HomePage(),
           UserDetailsPage.routeName: (context) => UserDetailsPage(),
         },
