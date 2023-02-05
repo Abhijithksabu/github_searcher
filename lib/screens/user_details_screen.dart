@@ -504,7 +504,7 @@ class _UserDetailsPageState extends State<UserDetailsPage> {
                                   children: [
                                     Lottie.asset(
                                         'lib/lotties/home_search.json'),
-                                    Text('No results found',
+                                    Text('No repos found',
                                         style: TextStyle(
                                           letterSpacing: 2,
                                           fontSize: 11,
